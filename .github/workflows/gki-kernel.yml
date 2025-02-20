@@ -278,7 +278,7 @@ jobs:
           
           elif [[ "${{ inputs.kernel_version }}" == "6.1" ]]; then
             cp ../../bore-scheduler/patches/legacy/linux-6.1-bore/0001-linux6.1.y-bore5.1.0.patch ./
-            cp ../../kernel_patches/0002-constgran-vanilla-max-android.patch ./
+            cp ../../bore-scheduler/patches/legacy/linux-6.1-bore/0002-constgran-vanilla-max-android.patch ./
             echo "Patch1"
             patch -p1 -F 3 < 0001-linux6.1.y-bore5.1.0.patch
             echo "Patch2"
